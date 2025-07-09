@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Open Sans;
+}
+header {
+  background: url('./images/developer.png'), url('./images/header_bg.png'),
+    rgb(255, 248, 243);
+  background-repeat: no-repeat;
+  background-position: 5px 20px,right bottom;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 10%;
+  padding: 50px 0 0 0;
+}
+nav h3 {
+  font-size: 45px;
+  font-weight: 800;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+nav h3 span {
+  color: rgb(253, 110, 10);
+}
+ul {
+  display: flex;
+  list-style: none;
+  gap: 50px;
+  align-items: center;
+}
+ul li a {
+  color: rgb(71, 71, 71);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+a {
+  text-decoration: none;
+}
+.last-item {
+  border-radius: 5px;
+  background: rgb(253, 110, 10);
+  padding: 10px 20px;
+  color: aliceblue;
+  font-weight: 700;
+}
+
+.banner-container{
+  display: flex;
+  align-items: center;
+  margin: 0 5% 0 10%;
+  justify-content: space-between;
+}
+
+.banner-content p {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+.banner-content h1 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 85px;
+  font-weight: 700;
+  line-height: 116px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-left: -2px;
+  margin-bottom: 20px;
+}
+.banner-content article {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0%;
+  text-align: left;
+}
+
+.banner-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 30px;
+}
+.dow-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  background: rgb(253, 110, 10);
+  padding: 10px 20px;
+  width: 40%;
+  transition: background-color 0.6s ease-in-out;
+  cursor: pointer;
+}
+.dow-btn:hover {
+  background-color: rgb(157, 70, 7);
+}
+.dow-btn img {
+  width: 20%;
+}
+.dow-btn span {
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.contact-btn {
+  padding: 15px 45px;
+  box-sizing: border-box;
+  border: 1px solid rgb(253, 110, 10);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  transition: background-color 0.5s ease-in-out;
+  cursor: pointer;
+}
+.contact-btn span {
+  color: rgb(253, 110, 10);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+}
+.contact-btn img {
+  width: 18%;
+  margin-left: 5%;
+}
+.contact-btn:hover {
+  background-color: rgb(253, 110, 10);
+}
+.contact-btn:hover span {
+  color: #fff;
+}
+#white-phn {
+  display: none;
+}
+.contact-btn:hover #white-phn {
+  display: block;
+}
+.contact-btn:hover #org-phn {
+  display: none;
+}
+
+.banner-img img {
+  width: 584px;
+  height: 680px;
+  position: relative;
+  bottom: -5px;
+}
