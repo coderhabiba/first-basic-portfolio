@@ -227,7 +227,6 @@ a {
 
 /* profession */
 .profession {
-  padding: 0 150px 150px 150px;
   margin: 0 10%;
 }
 .profession h2 {
@@ -247,23 +246,28 @@ a {
   line-height: 30px;
   letter-spacing: 0%;
   text-align: center;
-  margin: 30px 0;
+  margin: 30px 12%;
 }
-.cards{
+.cards {
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 20px;
+  gap: 2%;
   margin-top: 50px;
 }
-.card-1,.card-2,.card-3,.card-4{
+.card-1,
+.card-2,
+.card-3,
+.card-4 {
   border-radius: 5px;
   padding: 30px;
   box-shadow: 0px 6px 50px 0px rgba(0, 0, 0, 0.06);
   background: rgb(255, 255, 255);
   height: 400px;
 }
-.card-1 h4,.card-2 h4,.card-3 h4,.card-4 h4{
+.card-1 h4,
+.card-2 h4,
+.card-3 h4,
+.card-4 h4 {
   color: rgb(24, 24, 24);
   font-family: Open Sans;
   font-size: 20px;
@@ -272,7 +276,168 @@ a {
   letter-spacing: 0%;
   margin: 30px 0 30px 0;
 }
-.card-1 p,.card-2 p,.card-3 p,.card-4 p{
+.card-1 p,
+.card-2 p,
+.card-3 p,
+.card-4 p {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+} /* end profession */
+
+/* resume */
+.resume {
+  padding: 150px 10%;
+}
+.resume h2 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  text-align: center;
+  margin-bottom: 110px;
+}
+.resume-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+.resume .education h3,
+.experience h3 {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 41px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.resume .education h4,
+.experience h4 {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 25px;
+  font-weight: 700;
+  line-height: 34px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 10px;
+  margin-top: 30px;
+}
+
+.resume .education h6,
+.experience h6 {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.resume .education p,
+.experience p {
+  color: rgb(117, 117, 117);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  padding-bottom: 30px;
+  /* Dark 05 */
+  border-bottom: 1px solid rgb(209, 209, 209);
+}
+
+.resume .education div:last-child p,
+.resume .experience div:last-child p {
+  border-bottom: none;
+}
+
+.cv-btn {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  border-radius: 5px;
+  background: rgb(253, 110, 10);
+  padding: 10px 25px;
+  transition: background-color 0.9s ease-in-out;
+  cursor: pointer;
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+  border: 0;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.cv-btn:hover {
+  background-color: rgba(176, 84, 17, 0.849);
+}
+.cv-btn img {
+  width: 20%;
+} /* end resume */
+
+/* footer */
+footer {
+  padding: 130px 10%;
+  display: flex;
+  justify-content: space-between;
+  background: rgb(255, 248, 243);
+}
+.footer-content h2,
+.form-footer h2 {
+  color: rgb(24, 24, 24);
+  font-family: Open Sans;
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 48px;
+  letter-spacing: 0%;
+  margin-bottom: 20px;
+}
+
+.footer-content p {
+  color: rgb(71, 71, 71);
+  font-family: Open Sans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0%;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.icons img {
+  margin-right: 10px;
+}
+
+input,
+textarea {
+  padding: 18px 0;
+  padding-left: 30px;
+  border: 0;
+  outline: 0;
+  width: 100%;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  margin-bottom: 24px;
+}
+
+input::placeholder {
   color: rgb(117, 117, 117);
   font-family: Open Sans;
   font-size: 16px;
@@ -281,4 +446,22 @@ a {
   letter-spacing: 0%;
   text-align: left;
 }
-/* end profession */
+
+#submit{
+  color: rgb(255, 255, 255);
+  font-family: Open Sans;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 27px;
+  letter-spacing: 0%;
+  text-align: center;
+  background-color: rgb(253, 110, 10);
+  width: 20%;
+  padding: 10px 20px;
+  transition: background-color 0.5s ease-in-out;
+}
+
+#submit:hover{
+  background-color: rgba(67, 32, 6, 0.866);
+}
+/* end footer */
