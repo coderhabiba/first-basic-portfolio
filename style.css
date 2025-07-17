@@ -67,7 +67,6 @@ a {
   margin: 0 5% 0 10%;
   justify-content: space-between;
 }
-
 .banner-content p {
   color: rgb(71, 71, 71);
   font-family: Open Sans;
@@ -463,5 +462,190 @@ input::placeholder {
 
 #submit:hover{
   background-color: rgba(67, 32, 6, 0.866);
+}/* end footer */
+
+/* responsive media query */
+@media screen and (max-width: 576px) {
+  nav h3{
+   font-size: 34px;
+  }
+  nav{
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  nav ul{
+    gap: 10px;
+    flex-direction: column;
+  }
+  
+  .banner-container{
+    flex-direction: column;
+  }
+  .banner-content p {
+    font-size: 34px;
+    line-height: 40px;
+  }
+  .banner-content h1{
+    font-size: 48px;
+    margin-bottom: 0px;
+    line-height: 100px;
+  }
+  .banner-content article{
+    font-size: 16px;
+  }
+  .banner-btns{
+    flex-direction: column;
+    gap: 5px;
+  }
+  .dow-btn{
+    width: 32%;
+    gap: 1px;
+    padding: 5px 10px;
+  }
+  .dow-btn img{
+    width: 20%;
+  }
+  .dow-btn span{
+    font-size: 12px;
+  }
+  .contact-btn{
+    width: 32%;
+    gap: 10px;
+    padding: 5px 10px;
+  }
+  .contact-btn img{
+    width: 15%;
+  }
+  .contact-btn span{
+    font-size: 12px;
+  }
+  .banner-img img {
+  width: 100%;
+  height: auto;
 }
-/* end footer */
+  .about{
+    margin: 100px 10%;
+    padding: 50px 30px;
+  }
+  .about h2{
+    font-size: 24px;
+  }
+  .about article{
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-size: 14px;
+  }
+  .about-info{
+    flex-direction: column;
+  }
+  .about-info h5{
+    font-size: 16px;
+  }
+  .about-info p{
+    font-size: 16px;
+  }
+  .profession h2{
+    font-size: 24px;
+  }
+  .profession article{
+    font-size: 14px;
+    margin: 10px 12%;
+  }
+  .cards{
+    flex-direction: column;
+    gap: 15px;
+  }
+  .resume{
+    padding-bottom: 50px;
+    padding-top: 80px;
+  }
+  .resume-content{
+    flex-direction: column;
+  }
+   .resume h2{
+  margin-bottom: 20px;
+  font-size: 20px;
+}
+.resume .education h3,
+.experience h3{
+  font-size: 17px;
+  margin-bottom: 0px;
+}
+.resume .education h4,
+.experience h4{
+  margin-top: 15px;
+  font-size: 14px;
+}
+.resume .education h6,
+.experience h6{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.resume .education p,
+.experience p{
+  font-size: 14px;
+}
+.cv-btn{
+  font-size: 10px;
+  padding: 5px 8px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px; 
+}
+.cv-btn img{
+  width: 15%;
+}
+  footer{
+    flex-direction: column;
+    gap: 30px;
+  }
+  #submit{
+    font-size: 16px;
+    width: 30%;
+  }
+}
+@media screen and (min-width: 576px) and (max-width:992px) {
+  .banner-container{
+    flex-direction: column;
+  }
+  .cards{
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  .resume-content{
+    flex-direction: column;
+  }
+  .resume h2{
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+.resume .education h3,
+.experience h3{
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+.resume .education h4,
+.experience h4{
+  margin-top: 15px;
+  font-size: 14px;
+}
+.resume .education h6,
+.experience h6{
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+.resume .education p,
+.experience p{
+  font-size: 14px;
+}
+  footer{
+    flex-direction: column;
+    gap: 30px;
+  }
+  #submit{
+    font-size: 16px;
+    width: 20%;
+  } 
+}
